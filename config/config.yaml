@@ -3,7 +3,7 @@ dataset_dir: "/raid/users/Ruis/projects/resnet_classifier/dataset/wulan/"
 cuda_dev: "0"
 batch_size: 4
 num_workers: 4
-
+acc_epoch: 8
 
 lr: 0.001
 momentum: 0.9
