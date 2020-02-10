@@ -56,7 +56,7 @@ def main(cfg_p="./config/config.yaml"):
         accuracy = 0
         class_correct = list(0. for i in range(num_classes))
         class_total = list(0. for i in range(num_classes))
-        if epoch  > 8:
+        if epoch  > omgcfg.acc_epoch:
             # val Acc
             with torch.no_grad():
                 for data in valloader:
@@ -69,7 +69,7 @@ def main(cfg_p="./config/config.yaml"):
                     
                     # classes acc
                     c = (predicted == labels).squeeze()
-                    for i in range(4):
+                    for i in range(omgcfg.batch_size):
                         label = labels[i]
                         class_correct[label] += c[i].item()
                         class_total[label] += 1
