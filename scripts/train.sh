@@ -1,0 +1,1 @@
+python resnet_classifier/train.py #./config/config.yaml

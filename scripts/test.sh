@@ -1,0 +1,1 @@
+python resnet_classifier/infer_classes ./scripts/test.yaml

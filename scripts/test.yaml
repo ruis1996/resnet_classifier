@@ -1,0 +1,9 @@
+model_p: "./models/resnet-50_wulan_acc_96.48_108.pth"
+src_p: "./dataset/wulan/val/far/"
+dev: "cuda:1"
+# if cuda
+# dev: "cuda" or "cuda[:dev_num]" eg dev: "cuda:1"
+idx_to_class:
+  - "far"
+  - "near"
+  - "open"
